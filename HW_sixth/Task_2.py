@@ -4,8 +4,9 @@ class Point():
         y1 = float(input('Value for y is '))
         self.x = x1
         self.y = y1
-        
-class Shape(): 
+
+from abc import ABC, abstractmethod
+class Shape(ABC): 
     def per(self):
         return 0
     def area(self):
